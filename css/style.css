@@ -1,0 +1,514 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Mulish", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+.header {
+	padding: 3rem 0;
+
+	background-color: #fff;
+}
+
+.header__container {
+	max-width: 107rem;
+	margin: 0 auto;
+}
+
+.header__row {
+	display: flex;
+	align-items: center;
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0 11rem;
+	width: 100%;
+}
+.header__logo {
+	text-transform: uppercase;
+	font-family: "Cinzel Decorative", cursive;
+	font-size: 2rem;
+	margin: 0 12.5rem;
+}
+
+.header__logo h1 {
+	color: #222222;
+}
+
+/* .header__item:not(:nth-of-type(2)) {
+	margin-right: 6rem;
+} */
+
+.header__item a {
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	text-align: center;
+	font-weight: 700;
+	color: #222222;
+	position: relative;
+}
+
+.header__item a::before {
+	position: absolute;
+	content: "";
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 0.2rem;
+	background-color: #222222;
+	transition: 0.3s;
+}
+
+.header__item a:hover::before {
+	width: 100%;
+}
+
+/* BANNER */
+.banner {
+	height: 52rem;
+	background: url("../img/shop_header.jpg") center no-repeat;
+}
+
+/* SHOP */
+.shop {
+	padding: 5rem 0;
+}
+
+.shop__container {
+	max-width: 107rem;
+	margin: 0 auto;
+}
+
+.shop__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.shop__items {
+	width: 67%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.shop__item {
+	width: 30%;
+	margin-bottom: 4rem;
+	font-family: "Cinzel Decorative", cursive;
+	font-size: 1.6rem;
+}
+
+.shop__item h3 {
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.shop__item-add input {
+	font-size: 1.8rem;
+	color: #faab9f;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: "Cinzel Decorative", cursive;
+}
+
+.shop__item p {
+	margin-bottom: 1rem;
+}
+
+.shop__item button {
+	color: #faab9f;
+	text-transform: uppercase;
+	border: none;
+	background: transparent;
+	font-size: 1.6rem;
+}
+
+.shop__item-img {
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.shop__item img {
+	max-width: 21.4rem;
+	height: 32rem;
+	transition: 0.3s;
+}
+
+.shop__item img:hover {
+	transform: scale(1.05);
+}
+
+.shop__item:nth-of-type(2) {
+	margin: 0 3rem;
+}
+
+.shop__category {
+	width: 18%;
+}
+
+.shop__category h3 {
+	font-size: 2.3rem;
+	font-weight: 700;
+	color: #222222;
+	text-transform: uppercase;
+	margin-bottom: 4.5rem;
+	font-family: "Cinzel Decorative", cursive;
+	position: relative;
+}
+
+.shop__category h3::before {
+	position: absolute;
+	content: "";
+	top: 41%;
+	left: -68px;
+	width: 6rem;
+	height: 0.2rem;
+	background-color: #faab9f;
+}
+
+.shop__category-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.shop__category-item a {
+	font-size: 1.6rem;
+	display: inline-block;
+	border-bottom: 2px dotted #faab9f;
+	margin-bottom: 2rem;
+	color: #222222;
+}
+
+/* FOOTER */
+.footer {
+	padding: 5rem 0;
+	background: url("../img/pattern3.png") center;
+}
+
+.footer__container {
+	max-width: 107rem;
+	margin: 0 auto;
+}
+
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__item {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__item:not(:nth-of-type(3)) {
+	margin-right: 5rem;
+}
+
+.footer__item img {
+	width: 5.5rem;
+	height: 5.5rem;
+	object-fit: cover;
+}
+
+.footer__item h3 {
+	font-size: 2.3rem;
+	font-weight: 700;
+	margin-bottom: 4rem;
+	font-family: "Cinzel Decorative", cursive;
+}
+
+.footer__item p {
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin-bottom: 3rem;
+}
+
+.footer__item form {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__item form input {
+	background-color: #fff;
+	padding: 1.5rem 2rem;
+	border: none;
+	outline: none;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+
+.footer__item form button {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.7rem;
+	background-color: #faab9f;
+	outline: none;
+	color: #fff;
+	border: none;
+	padding: 2rem;
+}
+
+.footer__item ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.footer__item ul li {
+	align-self: flex-start;
+	font-size: 1.5rem;
+	border-bottom: 2px dotted #faab9f;
+	margin-bottom: 1rem;
+}
+
+.footer__books {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__book {
+	display: flex;
+	align-self: flex-start;
+}
+
+.footer__book-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 1rem;
+}
+
+.footer__book-desc h4 {
+	/* margin-top: 3rem; */
+	margin-bottom: 0.5rem;
+	font-size: 1.7rem;
+}
+
+.footer__book-desc p {
+	font-weight: normal;
+	font-size: 1.5rem;
+}
+
+/* LOGIN */
+.login,
+.register,
+.cart,
+.order {
+	padding: 12rem 0;
+	background-color: #ebebf0;
+}
+
+.login__container,
+.register__container,
+.cart__container,
+.order__container {
+	max-width: 107rem;
+	margin: 0 auto;
+}
+
+.login__row,
+.register__row,
+.cart__row,
+.order__row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login__row h2,
+.register__row h2,
+.cart__row h2,
+.order__row h2 {
+	margin: 0 auto;
+	font-family: "Cinzel Decorative", cursive;
+	font-size: 5.2rem;
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.login__row h2 {
+	left: 13px;
+}
+
+.register__row h2 {
+	left: 18px;
+}
+
+.cart__row h2 {
+	left: 25px;
+}
+
+.order__row h2 {
+	left: 84px;
+}
+
+.login__row h2 span,
+.register__row h2 span,
+.cart__row h2 span,
+.order__row h2 span {
+	font-weight: bold;
+	font-size: 7rem;
+	position: absolute;
+	content: "";
+	top: -38px;
+	left: -51px;
+	color: #faab9f;
+	border: 1px solid #faab9f;
+	padding: 2rem;
+}
+
+.register__row h2 span {
+	top: -32px;
+	left: -68px;
+}
+
+.cart__row h2 span {
+	top: -32px;
+	left: -79px;
+}
+
+.order__row h2 span {
+	top: -32px;
+	left: -234px;
+}
+
+.login__row form,
+.register__row form {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+	font-family: "Gentium Basic", serif;
+}
+
+.login__row form .input__group,
+.register__row form .input__group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4rem;
+}
+
+.login__row form .input__group label,
+.register__row form .input__group label {
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	letter-spacing: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.login__row form .input__group input[type="text"],
+.login__row form .input__group input[type="password"],
+.register__row form .input__group input[type="text"],
+.register__row form .input__group input[type="password"] {
+	font-size: 17px;
+	padding: 1rem 2rem;
+	border: none;
+}
+
+.login__row form input[type="submit"],
+.register__row form input[type="submit"] {
+	font-size: 1.7rem;
+	width: 50%;
+	border: 1px solid #000;
+	background-color: transparent;
+	outline: none;
+	padding: 1rem;
+	margin: 0 auto;
+	cursor: pointer;
+	position: relative;
+}
+
+.login__row .input__group-submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login__row .input__group-submit input {
+	transition: 0.3s;
+}
+
+.login__row .input__group-submit input:hover {
+	background-color: #222222;
+	color: #fff;
+}
+
+/* CART */
+.cart__items,
+.order__items {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 5rem;
+}
+
+.cart__title,
+.cart__item,
+.order__title,
+.order__item {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font-size: 1.8rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.cart__title div,
+.order__title div {
+	flex: 1;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	padding: 2rem 0;
+}
+
+.cart__item div,
+.order__item div {
+	flex: 1;
+	padding: 3rem 0;
+}
+
+.cart__item form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+}
+
+.cart__item form input[type="submit"] {
+	padding: 1rem;
+	border: 2px solid;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.cart__item form input[type="tel"] {
+	text-align: center;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.cart__item img {
+	width: 8rem;
+	height: 8rem;
+}
